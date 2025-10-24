@@ -9,7 +9,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, sans-serif;
         }
         
         body {
@@ -19,43 +19,28 @@
         }
         
         .container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
         
-        /* Шапка сайта */
         header {
-            background: linear-gradient(135deg, #ff6b00 0%, #ff3d00 100%);
-            padding: 30px 0;
-            box-shadow: 0 4px 20px rgba(255, 107, 0, 0.3);
+            background: #ff6b00;
+            padding: 40px 0;
+            text-align: center;
         }
         
         .logo {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-        
-        .logo-icon {
-            font-size: 48px;
-        }
-        
-        .logo-text {
-            font-size: 52px;
-            font-weight: 900;
+            font-size: 60px;
+            font-weight: bold;
             text-transform: uppercase;
-            letter-spacing: 2px;
-            text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
         }
         
         .tagline {
-            font-size: 28px;
+            font-size: 24px;
             margin-top: 10px;
-            font-weight: 300;
         }
         
-        /* Основной контент */
         .main-content {
             padding: 60px 0;
         }
@@ -65,194 +50,118 @@
         }
         
         .section-title {
-            font-size: 46px;
+            font-size: 48px;
             margin-bottom: 40px;
             color: #ff6b00;
             text-align: center;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
-            position: relative;
-        }
-        
-        .section-title:after {
-            content: '';
-            display: block;
-            width: 120px;
-            height: 5px;
-            background: #ff6b00;
-            margin: 15px auto;
-            border-radius: 3px;
         }
         
         .section-content {
             font-size: 24px;
             margin-bottom: 30px;
             text-align: center;
-            max-width: 1000px;
-            margin-left: auto;
-            margin-right: auto;
+            line-height: 1.8;
         }
         
-        /* Блок с преимуществами */
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 40px;
-            margin-top: 50px;
-        }
-        
-        .feature {
-            background: rgba(255, 107, 0, 0.1);
-            border-radius: 15px;
-            padding: 40px 30px;
-            width: 350px;
+        .game-showcase {
             text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-            border: 2px solid rgba(255, 107, 0, 0.3);
+            margin: 60px 0;
         }
         
-        .feature:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(255, 107, 0, 0.2);
-        }
-        
-        .feature-icon {
-            font-size: 60px;
-            margin-bottom: 25px;
+        .game-title {
+            font-size: 42px;
             color: #ff6b00;
-        }
-        
-        .feature-title {
-            font-size: 28px;
-            margin-bottom: 20px;
-            color: #ff6b00;
-        }
-        
-        .feature-description {
-            font-size: 20px;
-            line-height: 1.5;
-        }
-        
-        /* Блок с Rustore */
-        .rustore-section {
-            background: linear-gradient(135deg, rgba(255, 107, 0, 0.15) 0%, rgba(255, 61, 0, 0.15) 100%);
-            padding: 60px 40px;
-            border-radius: 20px;
-            text-align: center;
-            margin-top: 40px;
-        }
-        
-        .rustore-logo {
-            font-size: 80px;
             margin-bottom: 30px;
-            color: #ff6b00;
+        }
+        
+        .game-description {
+            font-size: 22px;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            line-height: 1.7;
+        }
+        
+        .image-placeholder {
+            width: 100%;
+            max-width: 800px;
+            height: 400px;
+            background: #2a2a2a;
+            margin: 30px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #ff6b00;
+            font-size: 20px;
+        }
+        
+        .rustore-section {
+            background: #1a1a1a;
+            padding: 60px 40px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 60px;
         }
         
         .rustore-title {
             font-size: 42px;
-            margin-bottom: 30px;
             color: #ff6b00;
-        }
-        
-        .rustore-description {
-            font-size: 26px;
-            margin-bottom: 40px;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
+            margin-bottom: 30px;
         }
         
         .rustore-button {
             display: inline-block;
             background: #ff6b00;
             color: white;
-            font-size: 26px;
-            font-weight: bold;
+            font-size: 24px;
             padding: 20px 50px;
-            border-radius: 50px;
             text-decoration: none;
-            transition: background 0.3s, transform 0.3s;
-            box-shadow: 0 10px 20px rgba(255, 107, 0, 0.3);
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            border-radius: 5px;
+            margin-top: 30px;
         }
         
-        .rustore-button:hover {
-            background: #ff8533;
-            transform: translateY(-5px);
-            box-shadow: 0 15px 25px rgba(255, 107, 0, 0.4);
-        }
-        
-        /* Блок с играми */
-        .games-grid {
+        .features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 40px;
-            margin-top: 50px;
+            margin-top: 60px;
         }
         
-        .game-card {
-            background: rgba(30, 35, 40, 0.8);
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s;
+        .feature {
+            background: #1a1a1a;
+            padding: 40px 30px;
+            text-align: center;
+            border-radius: 10px;
         }
         
-        .game-card:hover {
-            transform: translateY(-10px);
-        }
-        
-        .game-image {
-            height: 250px;
-            background: linear-gradient(135deg, #ff6b00 0%, #ff3d00 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 80px;
-            color: white;
-        }
-        
-        .game-content {
-            padding: 30px;
-        }
-        
-        .game-title {
-            font-size: 32px;
-            margin-bottom: 15px;
+        .feature-title {
+            font-size: 28px;
             color: #ff6b00;
+            margin-bottom: 20px;
         }
         
-        .game-description {
-            font-size: 20px;
-            line-height: 1.5;
+        .feature-description {
+            font-size: 18px;
+            line-height: 1.6;
         }
         
-        /* Подвал сайта */
         footer {
-            background: #070a0d;
+            background: #000000;
             padding: 60px 0 30px;
             margin-top: 80px;
         }
         
         .footer-content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 40px;
             margin-bottom: 50px;
         }
         
-        .footer-section {
-            flex: 1;
-            min-width: 300px;
-        }
-        
-        .footer-title {
-            font-size: 28px;
-            margin-bottom: 25px;
+        .footer-section h3 {
+            font-size: 24px;
             color: #ff6b00;
+            margin-bottom: 20px;
         }
         
         .footer-links {
@@ -266,221 +175,125 @@
         .footer-links a {
             color: #cccccc;
             text-decoration: none;
-            font-size: 20px;
-            transition: color 0.3s;
-        }
-        
-        .footer-links a:hover {
-            color: #ff6b00;
+            font-size: 18px;
         }
         
         .copyright {
             text-align: center;
-            font-size: 18px;
+            font-size: 16px;
             color: #888888;
             padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 1px solid #333333;
         }
         
-        /* Адаптивность */
         @media (max-width: 768px) {
-            .logo-text {
-                font-size: 36px;
-            }
-            
-            .tagline {
-                font-size: 20px;
-            }
-            
-            .section-title {
-                font-size: 36px;
-            }
-            
-            .section-content {
-                font-size: 20px;
-            }
-            
-            .rustore-title {
-                font-size: 32px;
-            }
-            
-            .rustore-description {
-                font-size: 20px;
-            }
-            
-            .rustore-button {
-                font-size: 20px;
-                padding: 15px 30px;
-            }
+            .logo { font-size: 40px; }
+            .section-title { font-size: 36px; }
+            .section-content { font-size: 20px; }
         }
     </style>
 </head>
 <body>
-    <!-- Шапка сайта -->
     <header>
         <div class="container">
-            <div class="logo">
-                <div class="logo-icon">🌭</div>
-                <div>
-                    <h1 class="logo-text">Hotdog_Games</h1>
-                    <p class="tagline">Создаём игры, которые захватывают дух!</p>
-                </div>
-            </div>
+            <h1 class="logo">Hotdog_Games</h1>
+            <p class="tagline">Разработка игр нового поколения</p>
         </div>
     </header>
 
-    <!-- Основной контент -->
     <main class="main-content">
         <div class="container">
-            <!-- О компании -->
             <section class="section">
-                <h2 class="section-title">О нашей компании</h2>
+                <h2 class="section-title">О компании</h2>
                 <p class="section-content">
-                    Hotdog_Games — это динамично развивающаяся студия разработки игр, основанная в 2018 году. 
-                    Мы специализируемся на создании уникальных и захватывающих игровых проектов для мобильных платформ и ПК. 
-                    Наша команда состоит из талантливых разработчиков, дизайнеров и гейм-дизайнеров, которые горят своим делом.
-                </p>
-                <p class="section-content">
-                    Мы верим, что игры — это не просто развлечение, а искусство, способное вызывать эмоции, 
-                    вдохновлять и объединять людей по всему миру. Каждый наш проект — это результат кропотливой работы, 
-                    творческого подхода и стремления к совершенству.
+                    Hotdog_Games — студия разработки игр, основанная в 2025 году. 
+                    Мы создаем инновационные игровые проекты с фокусом на качество и пользовательский опыт.
                 </p>
                 
                 <div class="features">
                     <div class="feature">
-                        <div class="feature-icon">🎮</div>
-                        <h3 class="feature-title">ИННОВАЦИОННЫЙ ГЕЙМПЛЕЙ</h3>
-                        <p class="feature-description">Мы создаём уникальные игровые механики, которые делают наши игры неповторимыми и увлекательными.</p>
+                        <h3 class="feature-title">Качественная разработка</h3>
+                        <p class="feature-description">Используем современные технологии и методологии для создания лучших игр</p>
                     </div>
                     <div class="feature">
-                        <div class="feature-icon">🎨</div>
-                        <h3 class="feature-title">ВЫСОКОЕ КАЧЕСТВО ГРАФИКИ</h3>
-                        <p class="feature-description">Наша графика — это сочетание современных технологий и художественного вкуса.</p>
+                        <h3 class="feature-title">Инновации</h3>
+                        <p class="feature-description">Постоянно исследуем новые подходы к геймдизайну и игровым механикам</p>
                     </div>
                     <div class="feature">
-                        <div class="feature-icon">💡</div>
-                        <h3 class="feature-title">КРЕАТИВНЫЙ ПОДХОД</h3>
-                        <p class="feature-description">Мы постоянно ищем новые идеи и не боимся экспериментировать.</p>
+                        <h3 class="feature-title">Сообщество</h3>
+                        <p class="feature-description">Слушаем наших игроков и строим долгосрочные отношения с сообществом</p>
                     </div>
                 </div>
             </section>
 
-            <!-- Наши игры -->
             <section class="section">
-                <h2 class="section-title">Наши игры</h2>
-                <p class="section-content">
-                    За время нашей работы мы выпустили несколько успешных проектов, которые получили признание 
-                    игроков по всему миру. Каждая наша игра — это уникальный опыт, созданный с любовью и вниманием к деталям.
-                </p>
+                <h2 class="section-title">Наши проекты</h2>
                 
-                <div class="games-grid">
-                    <div class="game-card">
-                        <div class="game-image">🚀</div>
-                        <div class="game-content">
-                            <h3 class="game-title">КОСМИЧЕСКИЕ ПРИКЛЮЧЕНИЯ</h3>
-                            <p class="game-description">Захватывающая аркада с бесконечным космическим пространством, улучшениями корабля и эпическими боссами.</p>
-                        </div>
+                <div class="game-showcase">
+                    <h3 class="game-title">Mythrea</h3>
+                    <p class="game-description">
+                        Mythrea — это захватывающая ролевая игра в фэнтезийном сеттинге. 
+                        Исследуйте огромный мир, сражайтесь с мифическими существами и раскрывайте древние тайны.
+                    </p>
+                    
+                    <div class="image-placeholder">
+                        Обложка игры Mythrea
                     </div>
-                    <div class="game-card">
-                        <div class="game-image">🏰</div>
-                        <div class="game-content">
-                            <h3 class="game-title">ЗАМОК ДРАКОНА</h3>
-                            <p class="game-description">Стратегическая RPG с глубоким сюжетом, развитием персонажей и масштабными битвами с mythical существами.</p>
-                        </div>
+                    
+                    <div class="image-placeholder">
+                        Скриншот геймплея Mythrea
                     </div>
-                    <div class="game-card">
-                        <div class="game-image">🧩</div>
-                        <div class="game-content">
-                            <h3 class="game-title">ГОЛОВОЛОМКИ ВСЕЛЕННОЙ</h3>
-                            <p class="game-description">Интеллектуальная игра с сотнями уникальных головоломок, которые бросят вызов вашему мышлению.</p>
-                        </div>
+                    
+                    <div class="image-placeholder">
+                        Арт персонажей Mythrea
                     </div>
                 </div>
             </section>
 
-            <!-- Rustore -->
             <section class="section">
-                <h2 class="section-title">Наши игры в RuStore</h2>
-                <p class="section-content">
-                    Мы гордимся тем, что наши игры доступны в официальном российском магазине приложений RuStore. 
-                    Это позволяет нам быть ближе к нашей аудитории и предоставлять качественный контент для российских игроков.
-                </p>
+                <h2 class="section-title">Доступность</h2>
                 
                 <div class="rustore-section">
-                    <div class="rustore-logo">📱</div>
-                    <h3 class="rustore-title">СКАЧАЙТЕ НАШИ ИГРЫ В RUSTORE</h3>
-                    <p class="rustore-description">
-                        Все наши последние проекты и эксклюзивные обновления доступны в RuStore. 
-                        Поддержите отечественного разработчика и наслаждайтесь играми без ограничений!
+                    <h3 class="rustore-title">Наши игры в RuStore</h3>
+                    <p class="section-content">
+                        Все наши проекты доступны в официальном российском магазине приложений RuStore. 
+                        Скачивайте и наслаждайтесь играми без ограничений.
                     </p>
-                    <a href="#" class="rustore-button">Перейти в Rustore</a>
-                </div>
-            </section>
-
-            <!-- Контакты -->
-            <section class="section">
-                <h2 class="section-title">Свяжитесь с нами</h2>
-                <p class="section-content">
-                    У вас есть вопросы, предложения или вы хотите сотрудничать с нами? 
-                    Мы всегда рады общению с нашими игроками и партнёрами!
-                </p>
-                
-                <div class="features">
-                    <div class="feature">
-                        <div class="feature-icon">📧</div>
-                        <h3 class="feature-title">EMAIL</h3>
-                        <p class="feature-description">info@hotdog-games.ru</p>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">🌐</div>
-                        <h3 class="feature-title">САЙТ</h3>
-                        <p class="feature-description">www.hotdog-games.ru</p>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">💼</div>
-                        <h3 class="feature-title">СОТРУДНИЧЕСТВО</h3>
-                        <p class="feature-description">partners@hotdog-games.ru</p>
-                    </div>
+                    <a href="#" class="rustore-button">Перейти в RuStore</a>
                 </div>
             </section>
         </div>
     </main>
 
-    <!-- Подвал сайта -->
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3 class="footer-title">Hotdog_Games</h3>
-                    <p style="font-size: 20px; margin-bottom: 20px;">Создаём игры, которые захватывают дух!</p>
-                    <p style="font-size: 18px; color: #cccccc;">© 2023 Hotdog_Games. Все права защищены.</p>
+                    <h3>Hotdog_Games</h3>
+                    <p>Создаем игры, которые вдохновляют</p>
                 </div>
                 
                 <div class="footer-section">
-                    <h3 class="footer-title">Наши игры</h3>
+                    <h3>Проекты</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Космические приключения</a></li>
-                        <li><a href="#">Замок дракона</a></li>
-                        <li><a href="#">Головоломки вселенной</a></li>
-                        <li><a href="#">Скоро выйдут</a></li>
+                        <li><a href="#">Mythrea</a></li>
+                        <li><a href="#">Будущие проекты</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h3 class="footer-title">Полезные ссылки</h3>
+                    <h3>Контакты</h3>
                     <ul class="footer-links">
+                        <li><a href="#">Email: info@hotdog-games.ru</a></li>
                         <li><a href="#">Поддержка</a></li>
-                        <li><a href="#">Политика конфиденциальности</a></li>
-                        <li><a href="#">Условия использования</a></li>
-                        <li><a href="#">Вакансии</a></li>
                     </ul>
                 </div>
             </div>
             
             <div class="copyright">
-                Hotdog_Games - Разработка игр для мобильных устройств и ПК | Доступно в RuStore
+                © 2025 Hotdog_Games. Все права защищены.
             </div>
         </div>
     </footer>
 </body>
-  </html>
+</html>
